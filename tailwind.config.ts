@@ -57,14 +57,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        ai: {
-          primary: "hsl(var(--ai-primary))",
-          secondary: "hsl(var(--ai-secondary))",
-          accent: "hsl(var(--ai-accent))",
+        electric: {
+          blue: "hsl(var(--electric-blue))",
         },
-        aws: {
-          orange: "hsl(var(--aws-orange))",
-        },
+        charcoal: "hsl(var(--charcoal))",
+        "light-gray": "hsl(var(--light-gray))",
+        "medium-gray": "hsl(var(--medium-gray))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -104,12 +102,13 @@ export default {
         "float": "float 3s ease-in-out infinite",
       },
       backgroundImage: {
-        "gradient-ai": "var(--gradient-ai)",
-        "gradient-aws": "var(--gradient-aws)",
+        "gradient-primary": "var(--gradient-primary)",
         "gradient-hero": "var(--gradient-hero)",
+        "gradient-card": "var(--gradient-card)",
       },
       boxShadow: {
-        "ai": "var(--shadow-ai)",
+        "card": "var(--shadow-card)",
+        "hover": "var(--shadow-hover)",
         "glow": "var(--shadow-glow)",
       },
     },

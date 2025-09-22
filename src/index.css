@@ -8,36 +8,38 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
 
-    --primary: 142.1 76.2% 36.3%;
-    --primary-foreground: 355.7 100% 97.3%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 210 40% 98%;
+    --secondary-foreground: 240 5.9% 10%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 210 40% 98%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 210 40% 98%;
+    --accent-foreground: 240 5.9% 10%;
 
-    --ai-primary: 210 100% 56%;
-    --ai-secondary: 271 81% 56%;
-    --ai-accent: 142.1 76.2% 36.3%;
-    --aws-orange: 23 100% 50%;
-    --gradient-ai: linear-gradient(135deg, hsl(var(--ai-primary)), hsl(var(--ai-secondary)));
-    --gradient-aws: linear-gradient(135deg, hsl(var(--aws-orange)), hsl(var(--ai-primary)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--secondary)));
-    --shadow-ai: 0 10px 40px hsl(var(--ai-primary) / 0.3);
-    --shadow-glow: 0 0 60px hsl(var(--ai-secondary) / 0.4);
+    --electric-blue: 217 91% 60%;
+    --charcoal: 216 12% 18%;
+    --light-gray: 220 14% 96%;
+    --medium-gray: 215 16% 47%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(var(--electric-blue)), hsl(var(--electric-blue)) 50%, hsl(217 91% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--light-gray)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--light-gray)));
+    --shadow-card: 0 4px 6px -1px hsl(var(--charcoal) / 0.1), 0 2px 4px -1px hsl(var(--charcoal) / 0.06);
+    --shadow-hover: 0 10px 15px -3px hsl(var(--charcoal) / 0.1), 0 4px 6px -2px hsl(var(--charcoal) / 0.05);
+    --shadow-glow: 0 0 40px hsl(var(--electric-blue) / 0.3);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -66,17 +68,17 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 216 12% 18%;
+    --foreground: 0 0% 98%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 13% 21%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 13% 21%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 216 12% 18%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -86,6 +88,17 @@ All colors MUST be HSL.
 
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
+
+    --charcoal: 216 12% 18%;
+    --light-gray: 220 13% 21%;
+    --medium-gray: 215 20% 65%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(var(--electric-blue)), hsl(217 91% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--light-gray)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--light-gray)));
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.2), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
+    --shadow-hover: 0 10px 15px -3px hsl(0 0% 0% / 0.2), 0 4px 6px -2px hsl(0 0% 0% / 0.1);
+    --shadow-glow: 0 0 40px hsl(var(--electric-blue) / 0.4);
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
