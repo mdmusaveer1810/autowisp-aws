@@ -1,61 +1,47 @@
 import { Users, Target, Award, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-
 const About = () => {
-  const team = [
-    {
-      name: "Alex Rodriguez",
-      role: "Creative Director",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80",
-      bio: "10+ years in digital design with a passion for creating user-centered experiences."
-    },
-    {
-      name: "Sarah Kim",
-      role: "Lead Developer",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b639?auto=format&fit=crop&w=300&q=80",
-      bio: "Full-stack developer specializing in modern web technologies and performance optimization."
-    },
-    {
-      name: "Michael Chen",
-      role: "UX Designer",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300&q=80",
-      bio: "Expert in user research and interface design, creating intuitive digital experiences."
-    },
-    {
-      name: "Emma Thompson",
-      role: "Brand Strategist",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=300&q=80",
-      bio: "Strategic thinker who helps brands tell their story through compelling visual identity."
-    }
-  ];
-
-  const values = [
-    {
-      icon: Users,
-      title: "User-First Approach",
-      description: "Every design decision we make is centered around creating the best possible experience for your users."
-    },
-    {
-      icon: Target,
-      title: "Results-Driven",
-      description: "We focus on delivering measurable results that contribute to your business growth and success."
-    },
-    {
-      icon: Award,
-      title: "Excellence",
-      description: "We maintain the highest standards in every project, from initial concept to final delivery."
-    },
-    {
-      icon: Heart,
-      title: "Passion",
-      description: "We love what we do and it shows in the quality and creativity of our work."
-    }
-  ];
-
-  return (
-    <div className="min-h-screen pt-16">
+  const team = [{
+    name: "Alex Rodriguez",
+    role: "Creative Director",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80",
+    bio: "10+ years in digital design with a passion for creating user-centered experiences."
+  }, {
+    name: "Sarah Kim",
+    role: "Lead Developer",
+    image: "https://images.unsplash.com/photo-1494790108755-2616b612b639?auto=format&fit=crop&w=300&q=80",
+    bio: "Full-stack developer specializing in modern web technologies and performance optimization."
+  }, {
+    name: "Michael Chen",
+    role: "UX Designer",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300&q=80",
+    bio: "Expert in user research and interface design, creating intuitive digital experiences."
+  }, {
+    name: "Emma Thompson",
+    role: "Brand Strategist",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=300&q=80",
+    bio: "Strategic thinker who helps brands tell their story through compelling visual identity."
+  }];
+  const values = [{
+    icon: Users,
+    title: "User-First Approach",
+    description: "Every design decision we make is centered around creating the best possible experience for your users."
+  }, {
+    icon: Target,
+    title: "Results-Driven",
+    description: "We focus on delivering measurable results that contribute to your business growth and success."
+  }, {
+    icon: Award,
+    title: "Excellence",
+    description: "We maintain the highest standards in every project, from initial concept to final delivery."
+  }, {
+    icon: Heart,
+    title: "Passion",
+    description: "We love what we do and it shows in the quality and creativity of our work."
+  }];
+  return <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-hero">
+      <section className="py-20 bg-gradient-hero bg-gray-600">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
             About <span className="bg-gradient-primary bg-clip-text text-transparent">PixelCraft Studios</span>
@@ -68,7 +54,7 @@ const About = () => {
       </section>
 
       {/* Our Story */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-gray-600">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">Our Story</h2>
@@ -95,7 +81,7 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-light-gray/50">
+      <section className="py-20 bg-light-gray/50 bg-gray-600">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div className="text-center">
@@ -117,7 +103,7 @@ const About = () => {
       </section>
 
       {/* Our Values */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-gray-600">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -129,8 +115,7 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
-              <Card key={value.title} className="text-center bg-gradient-card border-0 hover:shadow-hover transition-all duration-300">
+            {values.map((value, index) => <Card key={value.title} className="text-center bg-gradient-card border-0 hover:shadow-hover transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="mb-4 flex justify-center">
                     <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center">
@@ -140,14 +125,13 @@ const About = () => {
                   <h3 className="text-xl font-semibold text-foreground mb-3">{value.title}</h3>
                   <p className="text-medium-gray text-sm">{value.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
 
       {/* Team */}
-      <section className="py-20 bg-light-gray/50">
+      <section className="py-20 bg-light-gray/50 bg-gray-600">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -159,28 +143,22 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <Card key={member.name} className="group overflow-hidden bg-background border-0 hover:shadow-hover transition-all duration-300">
+            {team.map((member, index) => <Card key={member.name} className="group overflow-hidden bg-background border-0 hover:shadow-hover transition-all duration-300">
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+                  <img src={member.image} alt={member.name} className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" />
                 </div>
                 <CardContent className="p-6 text-center">
                   <h3 className="text-xl font-semibold text-foreground mb-1">{member.name}</h3>
                   <p className="text-electric-blue font-medium mb-3">{member.role}</p>
                   <p className="text-medium-gray text-sm">{member.bio}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-gray-600">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
@@ -206,8 +184,6 @@ const About = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default About;
