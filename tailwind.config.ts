@@ -57,6 +57,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        ai: {
+          primary: "hsl(var(--ai-primary))",
+          secondary: "hsl(var(--ai-secondary))",
+          accent: "hsl(var(--ai-accent))",
+        },
+        aws: {
+          orange: "hsl(var(--aws-orange))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +88,29 @@ export default {
             height: "0",
           },
         },
+        "float": {
+          "0%, 100%": {
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            transform: "translateY(-10px)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-ai": "pulse 2s infinite",
+        "float": "float 3s ease-in-out infinite",
+      },
+      backgroundImage: {
+        "gradient-ai": "var(--gradient-ai)",
+        "gradient-aws": "var(--gradient-aws)",
+        "gradient-hero": "var(--gradient-hero)",
+      },
+      boxShadow: {
+        "ai": "var(--shadow-ai)",
+        "glow": "var(--shadow-glow)",
       },
     },
   },
