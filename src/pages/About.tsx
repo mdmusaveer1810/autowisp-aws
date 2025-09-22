@@ -39,14 +39,14 @@ const About = () => {
     title: "Passion",
     description: "We love what we do and it shows in the quality and creativity of our work."
   }];
-  return <div className="min-h-screen pt-16">
+  return <div className="min-h-screen pt-16 bg-gray-600">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-hero bg-gray-600">
+      <section className="py-20 bg-gradient-hero bg-slate-600">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
             About <span className="bg-gradient-primary bg-clip-text text-transparent">PixelCraft Studios</span>
           </h1>
-          <p className="text-lg md:text-xl text-medium-gray max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-medium-gray max-w-3xl mx-auto leading-relaxed text-zinc-950 font-semibold">
             We are a passionate team of designers, developers, and strategists dedicated to crafting 
             beautiful, functional, and user-first digital experiences that help businesses thrive online.
           </p>
