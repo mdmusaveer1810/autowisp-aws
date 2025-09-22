@@ -24,7 +24,7 @@ const ServicesOverview = () => {
     description: "Optimize your website for search engines and ensure lightning-fast performance.",
     features: ["Technical SEO", "Speed Optimization", "Analytics Setup"]
   }];
-  return <section className="py-20 bg-[#050505]">
+  return <section className="py-20 bg-gray-600">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16 bg-[#a1d3f3]">
           <h2 className="text-3xl mb-4 font-bold md:text-5xl text-[#100007]">
@@ -36,17 +36,17 @@ const ServicesOverview = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {services.map((service, index) => <Card key={service.title} className="group hover:shadow-hover transition-all duration-300 bg-gradient-card border-0">
-              <CardContent className="p-6 text-center">
+          {services.map((service, index) => <Card key={service.title} className="group hover:shadow-hover transition-all duration-300 bg-gradient-card border-0 bg-red-400">
+              <CardContent className="p-6 text-center bg-red-300">
                 <div className="mb-4 flex justify-center">
                   <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <service.icon className="w-8 h-8 text-white" />
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">{service.title}</h3>
-                <p className="text-medium-gray text-sm mb-4">{service.description}</p>
+                <p className="text-medium-gray text-sm mb-4 text-gray-950">{service.description}</p>
                 <ul className="space-y-1">
-                  {service.features.map(feature => <li key={feature} className="text-xs text-medium-gray">• {feature}</li>)}
+                  {service.features.map(feature => <li key={feature} className="text-xs text-medium-gray bg-gray-400">• {feature}</li>)}
                 </ul>
               </CardContent>
             </Card>)}
