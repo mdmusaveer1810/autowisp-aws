@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
       {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden bg-gray-600">
+      <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-32 h-32 bg-electric-blue/10 rounded-full blur-xl animate-float"></div>
         <div className="absolute top-40 right-20 w-24 h-24 bg-electric-blue/20 rounded-full blur-lg animate-float" style={{
         animationDelay: '1s'
@@ -32,13 +32,23 @@ const HeroSection = () => {
           </h1>
 
           {/* Subtext */}
-          <p className="text-lg text-medium-gray max-w-2xl mx-auto leading-relaxed md:text-lg text-cyan-50">
+          <p className="text-lg md:text-xl text-medium-gray max-w-2xl mx-auto leading-relaxed">
             We help small businesses, startups, and e-commerce brands create stunning websites 
             that convert visitors into customers through user-first design and cutting-edge development.
           </p>
 
           {/* CTA Buttons */}
-          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button asChild size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300 group">
+              <Link to="/contact" className="flex items-center space-x-2">
+                <span>Get a Free Quote</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="border-electric-blue text-electric-blue hover:bg-electric-blue hover:text-white">
+              <Link to="/portfolio">View Our Work</Link>
+            </Button>
+          </div>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 pt-16 max-w-lg mx-auto">

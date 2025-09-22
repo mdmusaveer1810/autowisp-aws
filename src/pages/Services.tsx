@@ -2,84 +2,144 @@ import { Code, Palette, Search, Smartphone, Globe, Zap, Shield, BarChart } from 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+
 const Services = () => {
-  const services = [{
-    icon: Code,
-    title: "Web Design & Development",
-    description: "Custom websites built with modern technologies for optimal performance and user experience.",
-    features: ["Responsive Web Design", "Custom WordPress Development", "E-commerce Solutions", "Progressive Web Apps"],
-    price: "Starting at $3,000"
-  }, {
-    icon: Palette,
-    title: "UI/UX Design",
-    description: "User-centered design that creates intuitive and engaging digital experiences.",
-    features: ["User Research & Testing", "Wireframing & Prototyping", "Interface Design", "Design Systems"],
-    price: "Starting at $2,500"
-  }, {
-    icon: Smartphone,
-    title: "Branding & Identity",
-    description: "Complete brand identity solutions that make your business stand out from the competition.",
-    features: ["Logo Design & Brand Identity", "Brand Guidelines", "Marketing Materials", "Brand Strategy"],
-    price: "Starting at $2,000"
-  }, {
-    icon: Search,
-    title: "SEO & Performance Optimization",
-    description: "Optimize your website for search engines and ensure lightning-fast performance.",
-    features: ["Technical SEO Audit", "Speed Optimization", "Content Strategy", "Analytics Setup"],
-    price: "Starting at $1,500"
-  }, {
-    icon: Globe,
-    title: "Digital Strategy",
-    description: "Comprehensive digital strategies to help your business grow online.",
-    features: ["Digital Marketing Strategy", "Conversion Optimization", "User Journey Mapping", "Competitive Analysis"],
-    price: "Starting at $2,000"
-  }, {
-    icon: Zap,
-    title: "Website Maintenance",
-    description: "Ongoing support and maintenance to keep your website secure and up-to-date.",
-    features: ["Regular Updates", "Security Monitoring", "Performance Optimization", "Content Management"],
-    price: "Starting at $200/month"
-  }, {
-    icon: Shield,
-    title: "Website Security",
-    description: "Protect your website from threats with comprehensive security solutions.",
-    features: ["Security Audits", "SSL Certificates", "Malware Protection", "Backup Solutions"],
-    price: "Starting at $500"
-  }, {
-    icon: BarChart,
-    title: "Analytics & Reporting",
-    description: "Track your website's performance with detailed analytics and reporting.",
-    features: ["Google Analytics Setup", "Conversion Tracking", "Monthly Reports", "Performance Insights"],
-    price: "Starting at $300/month"
-  }];
-  const process = [{
-    step: "01",
-    title: "Discovery",
-    description: "We start by understanding your business, goals, and target audience."
-  }, {
-    step: "02",
-    title: "Strategy",
-    description: "We develop a comprehensive strategy tailored to your specific needs."
-  }, {
-    step: "03",
-    title: "Design",
-    description: "Our team creates beautiful, functional designs that align with your brand."
-  }, {
-    step: "04",
-    title: "Development",
-    description: "We build your project using the latest technologies and best practices."
-  }, {
-    step: "05",
-    title: "Testing",
-    description: "Rigorous testing ensures everything works perfectly across all devices."
-  }, {
-    step: "06",
-    title: "Launch",
-    description: "We launch your project and provide ongoing support and maintenance."
-  }];
-  return <div className="min-h-screen pt-16">
+  const services = [
+    {
+      icon: Code,
+      title: "Web Design & Development",
+      description: "Custom websites built with modern technologies for optimal performance and user experience.",
+      features: [
+        "Responsive Web Design",
+        "Custom WordPress Development",
+        "E-commerce Solutions",
+        "Progressive Web Apps"
+      ],
+      price: "Starting at $3,000"
+    },
+    {
+      icon: Palette,
+      title: "UI/UX Design",
+      description: "User-centered design that creates intuitive and engaging digital experiences.",
+      features: [
+        "User Research & Testing",
+        "Wireframing & Prototyping",
+        "Interface Design",
+        "Design Systems"
+      ],
+      price: "Starting at $2,500"
+    },
+    {
+      icon: Smartphone,
+      title: "Branding & Identity",
+      description: "Complete brand identity solutions that make your business stand out from the competition.",
+      features: [
+        "Logo Design & Brand Identity",
+        "Brand Guidelines",
+        "Marketing Materials",
+        "Brand Strategy"
+      ],
+      price: "Starting at $2,000"
+    },
+    {
+      icon: Search,
+      title: "SEO & Performance Optimization",
+      description: "Optimize your website for search engines and ensure lightning-fast performance.",
+      features: [
+        "Technical SEO Audit",
+        "Speed Optimization",
+        "Content Strategy",
+        "Analytics Setup"
+      ],
+      price: "Starting at $1,500"
+    },
+    {
+      icon: Globe,
+      title: "Digital Strategy",
+      description: "Comprehensive digital strategies to help your business grow online.",
+      features: [
+        "Digital Marketing Strategy",
+        "Conversion Optimization",
+        "User Journey Mapping",
+        "Competitive Analysis"
+      ],
+      price: "Starting at $2,000"
+    },
+    {
+      icon: Zap,
+      title: "Website Maintenance",
+      description: "Ongoing support and maintenance to keep your website secure and up-to-date.",
+      features: [
+        "Regular Updates",
+        "Security Monitoring",
+        "Performance Optimization",
+        "Content Management"
+      ],
+      price: "Starting at $200/month"
+    },
+    {
+      icon: Shield,
+      title: "Website Security",
+      description: "Protect your website from threats with comprehensive security solutions.",
+      features: [
+        "Security Audits",
+        "SSL Certificates",
+        "Malware Protection",
+        "Backup Solutions"
+      ],
+      price: "Starting at $500"
+    },
+    {
+      icon: BarChart,
+      title: "Analytics & Reporting",
+      description: "Track your website's performance with detailed analytics and reporting.",
+      features: [
+        "Google Analytics Setup",
+        "Conversion Tracking",
+        "Monthly Reports",
+        "Performance Insights"
+      ],
+      price: "Starting at $300/month"
+    }
+  ];
+
+  const process = [
+    {
+      step: "01",
+      title: "Discovery",
+      description: "We start by understanding your business, goals, and target audience."
+    },
+    {
+      step: "02",
+      title: "Strategy",
+      description: "We develop a comprehensive strategy tailored to your specific needs."
+    },
+    {
+      step: "03",
+      title: "Design",
+      description: "Our team creates beautiful, functional designs that align with your brand."
+    },
+    {
+      step: "04",
+      title: "Development",
+      description: "We build your project using the latest technologies and best practices."
+    },
+    {
+      step: "05",
+      title: "Testing",
+      description: "Rigorous testing ensures everything works perfectly across all devices."
+    },
+    {
+      step: "06",
+      title: "Launch",
+      description: "We launch your project and provide ongoing support and maintenance."
+    }
+  ];
+
+  return (
+    <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-hero bg-[#001000]">
+      <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
             Our <span className="bg-gradient-primary bg-clip-text text-transparent">Services</span>
@@ -92,10 +152,11 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-[#060606]">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => <Card key={service.title} className="group hover:shadow-hover transition-all duration-300 bg-gradient-card border-0">
+            {services.map((service, index) => (
+              <Card key={service.title} className="group hover:shadow-hover transition-all duration-300 bg-gradient-card border-0">
                 <CardContent className="p-6">
                   <div className="mb-4">
                     <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mb-4">
@@ -106,17 +167,20 @@ const Services = () => {
                   </div>
                   
                   <ul className="space-y-2 mb-6">
-                    {service.features.map(feature => <li key={feature} className="text-sm text-medium-gray flex items-center">
+                    {service.features.map((feature) => (
+                      <li key={feature} className="text-sm text-medium-gray flex items-center">
                         <div className="w-1.5 h-1.5 bg-electric-blue rounded-full mr-2"></div>
                         {feature}
-                      </li>)}
+                      </li>
+                    ))}
                   </ul>
                   
                   <div className="border-t border-muted pt-4">
                     <p className="text-lg font-semibold text-electric-blue">{service.price}</p>
                   </div>
                 </CardContent>
-              </Card>)}
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -134,7 +198,8 @@ const Services = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {process.map((item, index) => <div key={item.step} className="text-center">
+            {process.map((item, index) => (
+              <div key={item.step} className="text-center">
                 <div className="mb-4 flex justify-center">
                   <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-lg">{item.step}</span>
@@ -142,7 +207,8 @@ const Services = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">{item.title}</h3>
                 <p className="text-medium-gray text-sm">{item.description}</p>
-              </div>)}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -161,6 +227,8 @@ const Services = () => {
           </Button>
         </div>
       </section>
-    </div>;
+    </div>
+  );
 };
+
 export default Services;
